@@ -75,6 +75,7 @@ namespace Graph
             t.SetToolTip(button_SaveResultTest, "Збереження швидкості виконання алгоритму");
             t.SetToolTip(button_Random, "Рандомне створення ребер");
             t.SetToolTip(button_LoadGraph, "Загрузка графа з файла");
+            t.SetToolTip(button_Tests, "Тестування алгоритмів");
             // Добавляем каждый Label представляющий вершину в list
             LabelVertex.Add(label_Vertex1);
             LabelVertex.Add(label_Vertex2);
@@ -375,7 +376,6 @@ namespace Graph
         private void button_Random_Click(object sender, EventArgs e)
         {
             Random random = new Random();
-
             QuantityEdges++;
             pictureBox_Graphics.Focus();
             // Предоставляет доступ к алгоритмам поиска
@@ -386,14 +386,14 @@ namespace Graph
             button_SaveResult.Enabled = true;
             button_SaveResultTest.Enabled = true;
             // Блокировка изменения кол-во вершин после добавления ребра
-            numericUpDown_Vertex.Minimum = numericUpDown_VertexEnd.Value;
+            numericUpDown_Vertex.Minimum = numericUpDown_Vertex.Value;
             // Добавление рёбер
             for (int k = 0; k < numericUpDown_Vertex.Value; k++)
             {
                 for (int c = k+1; c < numericUpDown_Vertex.Value; c++)
                 {
-            graph.AddEdge(k+1, c+1, random.Next(100));
-            GetMatrix = graph.GetMatrix();
+                    graph.AddEdge(k+1, c+1, random.Next(100));
+                     GetMatrix = graph.GetMatrix();
             for (int i = 0; i < GetMatrix.GetLength(0); i++)
             {
                 for (int j = 0; j < GetMatrix.GetLength(1); j++)
@@ -518,6 +518,12 @@ namespace Graph
             {
                 MessageBox.Show("Файл открыт");
             }
+        }
+
+        private void button_Tests_Click(object sender, EventArgs e)
+        {
+            MethodTests methodTests = new MethodTests();
+            methodTests.Show();
         }
     }
 }

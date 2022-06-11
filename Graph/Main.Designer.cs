@@ -35,24 +35,11 @@ namespace Graph
             this.dataGridView_Result = new System.Windows.Forms.DataGridView();
             this.richTextBox_Result = new System.Windows.Forms.RichTextBox();
             this.panel_Graph = new System.Windows.Forms.Panel();
-            this.label_Vertex9 = new System.Windows.Forms.Label();
-            this.label_Vertex6 = new System.Windows.Forms.Label();
-            this.label_Vertex4 = new System.Windows.Forms.Label();
-            this.label_Vertex2 = new System.Windows.Forms.Label();
-            this.label_Vertex8 = new System.Windows.Forms.Label();
-            this.label_Vertex7 = new System.Windows.Forms.Label();
-            this.label_Vertex3 = new System.Windows.Forms.Label();
-            this.label_Vertex5 = new System.Windows.Forms.Label();
-            this.label_Vertex10 = new System.Windows.Forms.Label();
-            this.label_Vertex1 = new System.Windows.Forms.Label();
             this.panel_DataGridView = new System.Windows.Forms.Panel();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.pictureBox_Graphics = new System.Windows.Forms.PictureBox();
             this.groupBox_Data = new System.Windows.Forms.GroupBox();
-            this.button_Reset = new System.Windows.Forms.Button();
+            this.button_LoadGraph = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button_InformationApp = new System.Windows.Forms.Button();
-            this.button_InformationAuthor = new System.Windows.Forms.Button();
             this.numericUpDown_Vertex = new System.Windows.Forms.NumericUpDown();
             this.label_Vertex = new System.Windows.Forms.Label();
             this.groupBox_Edges = new System.Windows.Forms.GroupBox();
@@ -68,23 +55,36 @@ namespace Graph
             this.richTextBox_Test = new System.Windows.Forms.RichTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox_Algorithms = new System.Windows.Forms.GroupBox();
+            this.saveFileDialog_DataGridView = new System.Windows.Forms.SaveFileDialog();
+            this.openFile = new System.Windows.Forms.OpenFileDialog();
+            this.button_Tests = new System.Windows.Forms.Button();
+            this.label_Vertex9 = new System.Windows.Forms.Label();
+            this.label_Vertex6 = new System.Windows.Forms.Label();
+            this.label_Vertex4 = new System.Windows.Forms.Label();
+            this.label_Vertex2 = new System.Windows.Forms.Label();
+            this.label_Vertex8 = new System.Windows.Forms.Label();
+            this.label_Vertex7 = new System.Windows.Forms.Label();
+            this.label_Vertex3 = new System.Windows.Forms.Label();
+            this.label_Vertex5 = new System.Windows.Forms.Label();
+            this.label_Vertex10 = new System.Windows.Forms.Label();
+            this.label_Vertex1 = new System.Windows.Forms.Label();
+            this.pictureBox_Graphics = new System.Windows.Forms.PictureBox();
+            this.button_Reset = new System.Windows.Forms.Button();
+            this.button_InformationApp = new System.Windows.Forms.Button();
+            this.button_InformationAuthor = new System.Windows.Forms.Button();
             this.button_SaveResultTest = new System.Windows.Forms.Button();
             this.button_SaveMatrix = new System.Windows.Forms.Button();
             this.button_SaveResult = new System.Windows.Forms.Button();
-            this.groupBox_Algorithms = new System.Windows.Forms.GroupBox();
             this.Button_AFordBellman = new System.Windows.Forms.Button();
             this.Button_ADijkstra = new System.Windows.Forms.Button();
             this.Button_AFloydWarshal = new System.Windows.Forms.Button();
-            this.saveFileDialog_DataGridView = new System.Windows.Forms.SaveFileDialog();
-            this.button_LoadGraph = new System.Windows.Forms.Button();
-            this.openFile = new System.Windows.Forms.OpenFileDialog();
             this.panel_Main.SuspendLayout();
             this.panel_Matrix.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Result)).BeginInit();
             this.panel_Graph.SuspendLayout();
             this.panel_DataGridView.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Graphics)).BeginInit();
             this.groupBox_Data.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Vertex)).BeginInit();
@@ -96,6 +96,7 @@ namespace Graph
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox_Algorithms.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Graphics)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_Main
@@ -171,136 +172,6 @@ namespace Graph
             this.panel_Graph.Size = new System.Drawing.Size(1029, 327);
             this.panel_Graph.TabIndex = 2;
             // 
-            // label_Vertex9
-            // 
-            this.label_Vertex9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label_Vertex9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_Vertex9.Image = global::Graph.Properties.Resources.circle;
-            this.label_Vertex9.Location = new System.Drawing.Point(204, 169);
-            this.label_Vertex9.Name = "label_Vertex9";
-            this.label_Vertex9.Size = new System.Drawing.Size(45, 45);
-            this.label_Vertex9.TabIndex = 10;
-            this.label_Vertex9.Text = "9";
-            this.label_Vertex9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label_Vertex9.Visible = false;
-            // 
-            // label_Vertex6
-            // 
-            this.label_Vertex6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label_Vertex6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_Vertex6.Image = global::Graph.Properties.Resources.circle;
-            this.label_Vertex6.Location = new System.Drawing.Point(113, 249);
-            this.label_Vertex6.Name = "label_Vertex6";
-            this.label_Vertex6.Size = new System.Drawing.Size(45, 45);
-            this.label_Vertex6.TabIndex = 9;
-            this.label_Vertex6.Text = "6";
-            this.label_Vertex6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label_Vertex6.Visible = false;
-            // 
-            // label_Vertex4
-            // 
-            this.label_Vertex4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label_Vertex4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_Vertex4.Image = global::Graph.Properties.Resources.circle;
-            this.label_Vertex4.Location = new System.Drawing.Point(406, 249);
-            this.label_Vertex4.Name = "label_Vertex4";
-            this.label_Vertex4.Size = new System.Drawing.Size(45, 45);
-            this.label_Vertex4.TabIndex = 8;
-            this.label_Vertex4.Text = "4";
-            this.label_Vertex4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label_Vertex4.Visible = false;
-            // 
-            // label_Vertex2
-            // 
-            this.label_Vertex2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label_Vertex2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_Vertex2.Image = global::Graph.Properties.Resources.circle;
-            this.label_Vertex2.Location = new System.Drawing.Point(406, 68);
-            this.label_Vertex2.Name = "label_Vertex2";
-            this.label_Vertex2.Size = new System.Drawing.Size(45, 45);
-            this.label_Vertex2.TabIndex = 7;
-            this.label_Vertex2.Text = "2";
-            this.label_Vertex2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label_Vertex2.Visible = false;
-            // 
-            // label_Vertex8
-            // 
-            this.label_Vertex8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label_Vertex8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_Vertex8.Image = global::Graph.Properties.Resources.circle;
-            this.label_Vertex8.Location = new System.Drawing.Point(113, 68);
-            this.label_Vertex8.Name = "label_Vertex8";
-            this.label_Vertex8.Size = new System.Drawing.Size(45, 45);
-            this.label_Vertex8.TabIndex = 6;
-            this.label_Vertex8.Text = "8";
-            this.label_Vertex8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label_Vertex8.Visible = false;
-            // 
-            // label_Vertex7
-            // 
-            this.label_Vertex7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label_Vertex7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_Vertex7.Image = global::Graph.Properties.Resources.circle;
-            this.label_Vertex7.Location = new System.Drawing.Point(22, 169);
-            this.label_Vertex7.Name = "label_Vertex7";
-            this.label_Vertex7.Size = new System.Drawing.Size(45, 45);
-            this.label_Vertex7.TabIndex = 5;
-            this.label_Vertex7.Text = "7";
-            this.label_Vertex7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label_Vertex7.Visible = false;
-            // 
-            // label_Vertex3
-            // 
-            this.label_Vertex3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label_Vertex3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_Vertex3.Image = global::Graph.Properties.Resources.circle;
-            this.label_Vertex3.Location = new System.Drawing.Point(485, 169);
-            this.label_Vertex3.Name = "label_Vertex3";
-            this.label_Vertex3.Size = new System.Drawing.Size(45, 45);
-            this.label_Vertex3.TabIndex = 4;
-            this.label_Vertex3.Text = "3";
-            this.label_Vertex3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label_Vertex3.Visible = false;
-            // 
-            // label_Vertex5
-            // 
-            this.label_Vertex5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label_Vertex5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_Vertex5.Image = global::Graph.Properties.Resources.circle;
-            this.label_Vertex5.Location = new System.Drawing.Point(261, 280);
-            this.label_Vertex5.Name = "label_Vertex5";
-            this.label_Vertex5.Size = new System.Drawing.Size(45, 45);
-            this.label_Vertex5.TabIndex = 3;
-            this.label_Vertex5.Text = "5";
-            this.label_Vertex5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label_Vertex5.Visible = false;
-            // 
-            // label_Vertex10
-            // 
-            this.label_Vertex10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label_Vertex10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_Vertex10.Image = global::Graph.Properties.Resources.circle;
-            this.label_Vertex10.Location = new System.Drawing.Point(312, 169);
-            this.label_Vertex10.Name = "label_Vertex10";
-            this.label_Vertex10.Size = new System.Drawing.Size(45, 45);
-            this.label_Vertex10.TabIndex = 2;
-            this.label_Vertex10.Text = "10";
-            this.label_Vertex10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label_Vertex10.Visible = false;
-            // 
-            // label_Vertex1
-            // 
-            this.label_Vertex1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label_Vertex1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_Vertex1.Image = global::Graph.Properties.Resources.circle;
-            this.label_Vertex1.Location = new System.Drawing.Point(261, 40);
-            this.label_Vertex1.Name = "label_Vertex1";
-            this.label_Vertex1.Size = new System.Drawing.Size(45, 45);
-            this.label_Vertex1.TabIndex = 1;
-            this.label_Vertex1.Text = "1";
-            this.label_Vertex1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label_Vertex1.Visible = false;
-            // 
             // panel_DataGridView
             // 
             this.panel_DataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -330,17 +201,9 @@ namespace Graph
             this.dataGridView.TabIndex = 0;
             this.dataGridView.TabStop = false;
             // 
-            // pictureBox_Graphics
-            // 
-            this.pictureBox_Graphics.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox_Graphics.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox_Graphics.Name = "pictureBox_Graphics";
-            this.pictureBox_Graphics.Size = new System.Drawing.Size(1025, 323);
-            this.pictureBox_Graphics.TabIndex = 11;
-            this.pictureBox_Graphics.TabStop = false;
-            // 
             // groupBox_Data
             // 
+            this.groupBox_Data.Controls.Add(this.button_Tests);
             this.groupBox_Data.Controls.Add(this.button_LoadGraph);
             this.groupBox_Data.Controls.Add(this.button_Reset);
             this.groupBox_Data.Controls.Add(this.groupBox2);
@@ -355,16 +218,15 @@ namespace Graph
             this.groupBox_Data.TabStop = false;
             this.groupBox_Data.Text = "Данні";
             // 
-            // button_Reset
+            // button_LoadGraph
             // 
-            this.button_Reset.BackgroundImage = global::Graph.Properties.Resources.Delete;
-            this.button_Reset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_Reset.Location = new System.Drawing.Point(260, 24);
-            this.button_Reset.Name = "button_Reset";
-            this.button_Reset.Size = new System.Drawing.Size(34, 32);
-            this.button_Reset.TabIndex = 8;
-            this.button_Reset.UseVisualStyleBackColor = true;
-            this.button_Reset.Click += new System.EventHandler(this.button_Reset_Click);
+            this.button_LoadGraph.Location = new System.Drawing.Point(230, 24);
+            this.button_LoadGraph.Name = "button_LoadGraph";
+            this.button_LoadGraph.Size = new System.Drawing.Size(24, 32);
+            this.button_LoadGraph.TabIndex = 11;
+            this.button_LoadGraph.Text = "L";
+            this.button_LoadGraph.UseVisualStyleBackColor = true;
+            this.button_LoadGraph.Click += new System.EventHandler(this.button_LoadGraph_Click);
             // 
             // groupBox2
             // 
@@ -377,31 +239,9 @@ namespace Graph
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Об Авторе / Програмі";
             // 
-            // button_InformationApp
-            // 
-            this.button_InformationApp.BackgroundImage = global::Graph.Properties.Resources.Information1;
-            this.button_InformationApp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_InformationApp.Location = new System.Drawing.Point(212, 21);
-            this.button_InformationApp.Name = "button_InformationApp";
-            this.button_InformationApp.Size = new System.Drawing.Size(43, 41);
-            this.button_InformationApp.TabIndex = 1;
-            this.button_InformationApp.UseVisualStyleBackColor = true;
-            this.button_InformationApp.Click += new System.EventHandler(this.button_InformationApp_Click);
-            // 
-            // button_InformationAuthor
-            // 
-            this.button_InformationAuthor.BackgroundImage = global::Graph.Properties.Resources.Information;
-            this.button_InformationAuthor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_InformationAuthor.Location = new System.Drawing.Point(34, 21);
-            this.button_InformationAuthor.Name = "button_InformationAuthor";
-            this.button_InformationAuthor.Size = new System.Drawing.Size(43, 41);
-            this.button_InformationAuthor.TabIndex = 0;
-            this.button_InformationAuthor.UseVisualStyleBackColor = true;
-            this.button_InformationAuthor.Click += new System.EventHandler(this.button_InformationAuthor_Click);
-            // 
             // numericUpDown_Vertex
             // 
-            this.numericUpDown_Vertex.Location = new System.Drawing.Point(137, 30);
+            this.numericUpDown_Vertex.Location = new System.Drawing.Point(128, 30);
             this.numericUpDown_Vertex.Maximum = new decimal(new int[] {
             10,
             0,
@@ -409,7 +249,7 @@ namespace Graph
             0});
             this.numericUpDown_Vertex.Name = "numericUpDown_Vertex";
             this.numericUpDown_Vertex.ReadOnly = true;
-            this.numericUpDown_Vertex.Size = new System.Drawing.Size(88, 22);
+            this.numericUpDown_Vertex.Size = new System.Drawing.Size(70, 22);
             this.numericUpDown_Vertex.TabIndex = 1;
             this.numericUpDown_Vertex.ValueChanged += new System.EventHandler(this.numericUpDown_Vertex_ValueChanged);
             // 
@@ -595,6 +435,204 @@ namespace Graph
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Збереження данних";
             // 
+            // groupBox_Algorithms
+            // 
+            this.groupBox_Algorithms.Controls.Add(this.Button_AFordBellman);
+            this.groupBox_Algorithms.Controls.Add(this.Button_ADijkstra);
+            this.groupBox_Algorithms.Controls.Add(this.Button_AFloydWarshal);
+            this.groupBox_Algorithms.Location = new System.Drawing.Point(9, 22);
+            this.groupBox_Algorithms.Name = "groupBox_Algorithms";
+            this.groupBox_Algorithms.Size = new System.Drawing.Size(216, 83);
+            this.groupBox_Algorithms.TabIndex = 3;
+            this.groupBox_Algorithms.TabStop = false;
+            this.groupBox_Algorithms.Text = "Алгоритми пошуку";
+            // 
+            // openFile
+            // 
+            this.openFile.FileName = "openFileDialog";
+            // 
+            // button_Tests
+            // 
+            this.button_Tests.Location = new System.Drawing.Point(200, 24);
+            this.button_Tests.Name = "button_Tests";
+            this.button_Tests.Size = new System.Drawing.Size(24, 32);
+            this.button_Tests.TabIndex = 12;
+            this.button_Tests.Text = "T";
+            this.button_Tests.UseVisualStyleBackColor = true;
+            this.button_Tests.Click += new System.EventHandler(this.button_Tests_Click);
+            // 
+            // label_Vertex9
+            // 
+            this.label_Vertex9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_Vertex9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_Vertex9.Image = global::Graph.Properties.Resources.circle;
+            this.label_Vertex9.Location = new System.Drawing.Point(204, 169);
+            this.label_Vertex9.Name = "label_Vertex9";
+            this.label_Vertex9.Size = new System.Drawing.Size(45, 45);
+            this.label_Vertex9.TabIndex = 10;
+            this.label_Vertex9.Text = "9";
+            this.label_Vertex9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Vertex9.Visible = false;
+            // 
+            // label_Vertex6
+            // 
+            this.label_Vertex6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_Vertex6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_Vertex6.Image = global::Graph.Properties.Resources.circle;
+            this.label_Vertex6.Location = new System.Drawing.Point(113, 249);
+            this.label_Vertex6.Name = "label_Vertex6";
+            this.label_Vertex6.Size = new System.Drawing.Size(45, 45);
+            this.label_Vertex6.TabIndex = 9;
+            this.label_Vertex6.Text = "6";
+            this.label_Vertex6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Vertex6.Visible = false;
+            // 
+            // label_Vertex4
+            // 
+            this.label_Vertex4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_Vertex4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_Vertex4.Image = global::Graph.Properties.Resources.circle;
+            this.label_Vertex4.Location = new System.Drawing.Point(406, 249);
+            this.label_Vertex4.Name = "label_Vertex4";
+            this.label_Vertex4.Size = new System.Drawing.Size(45, 45);
+            this.label_Vertex4.TabIndex = 8;
+            this.label_Vertex4.Text = "4";
+            this.label_Vertex4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Vertex4.Visible = false;
+            // 
+            // label_Vertex2
+            // 
+            this.label_Vertex2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_Vertex2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_Vertex2.Image = global::Graph.Properties.Resources.circle;
+            this.label_Vertex2.Location = new System.Drawing.Point(406, 68);
+            this.label_Vertex2.Name = "label_Vertex2";
+            this.label_Vertex2.Size = new System.Drawing.Size(45, 45);
+            this.label_Vertex2.TabIndex = 7;
+            this.label_Vertex2.Text = "2";
+            this.label_Vertex2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Vertex2.Visible = false;
+            // 
+            // label_Vertex8
+            // 
+            this.label_Vertex8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_Vertex8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_Vertex8.Image = global::Graph.Properties.Resources.circle;
+            this.label_Vertex8.Location = new System.Drawing.Point(113, 68);
+            this.label_Vertex8.Name = "label_Vertex8";
+            this.label_Vertex8.Size = new System.Drawing.Size(45, 45);
+            this.label_Vertex8.TabIndex = 6;
+            this.label_Vertex8.Text = "8";
+            this.label_Vertex8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Vertex8.Visible = false;
+            // 
+            // label_Vertex7
+            // 
+            this.label_Vertex7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_Vertex7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_Vertex7.Image = global::Graph.Properties.Resources.circle;
+            this.label_Vertex7.Location = new System.Drawing.Point(22, 169);
+            this.label_Vertex7.Name = "label_Vertex7";
+            this.label_Vertex7.Size = new System.Drawing.Size(45, 45);
+            this.label_Vertex7.TabIndex = 5;
+            this.label_Vertex7.Text = "7";
+            this.label_Vertex7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Vertex7.Visible = false;
+            // 
+            // label_Vertex3
+            // 
+            this.label_Vertex3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_Vertex3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_Vertex3.Image = global::Graph.Properties.Resources.circle;
+            this.label_Vertex3.Location = new System.Drawing.Point(485, 169);
+            this.label_Vertex3.Name = "label_Vertex3";
+            this.label_Vertex3.Size = new System.Drawing.Size(45, 45);
+            this.label_Vertex3.TabIndex = 4;
+            this.label_Vertex3.Text = "3";
+            this.label_Vertex3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Vertex3.Visible = false;
+            // 
+            // label_Vertex5
+            // 
+            this.label_Vertex5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_Vertex5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_Vertex5.Image = global::Graph.Properties.Resources.circle;
+            this.label_Vertex5.Location = new System.Drawing.Point(261, 280);
+            this.label_Vertex5.Name = "label_Vertex5";
+            this.label_Vertex5.Size = new System.Drawing.Size(45, 45);
+            this.label_Vertex5.TabIndex = 3;
+            this.label_Vertex5.Text = "5";
+            this.label_Vertex5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Vertex5.Visible = false;
+            // 
+            // label_Vertex10
+            // 
+            this.label_Vertex10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_Vertex10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_Vertex10.Image = global::Graph.Properties.Resources.circle;
+            this.label_Vertex10.Location = new System.Drawing.Point(312, 169);
+            this.label_Vertex10.Name = "label_Vertex10";
+            this.label_Vertex10.Size = new System.Drawing.Size(45, 45);
+            this.label_Vertex10.TabIndex = 2;
+            this.label_Vertex10.Text = "10";
+            this.label_Vertex10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Vertex10.Visible = false;
+            // 
+            // label_Vertex1
+            // 
+            this.label_Vertex1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_Vertex1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_Vertex1.Image = global::Graph.Properties.Resources.circle;
+            this.label_Vertex1.Location = new System.Drawing.Point(261, 40);
+            this.label_Vertex1.Name = "label_Vertex1";
+            this.label_Vertex1.Size = new System.Drawing.Size(45, 45);
+            this.label_Vertex1.TabIndex = 1;
+            this.label_Vertex1.Text = "1";
+            this.label_Vertex1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Vertex1.Visible = false;
+            // 
+            // pictureBox_Graphics
+            // 
+            this.pictureBox_Graphics.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox_Graphics.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox_Graphics.Name = "pictureBox_Graphics";
+            this.pictureBox_Graphics.Size = new System.Drawing.Size(1025, 323);
+            this.pictureBox_Graphics.TabIndex = 11;
+            this.pictureBox_Graphics.TabStop = false;
+            // 
+            // button_Reset
+            // 
+            this.button_Reset.BackgroundImage = global::Graph.Properties.Resources.Delete;
+            this.button_Reset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_Reset.Location = new System.Drawing.Point(260, 24);
+            this.button_Reset.Name = "button_Reset";
+            this.button_Reset.Size = new System.Drawing.Size(34, 32);
+            this.button_Reset.TabIndex = 8;
+            this.button_Reset.UseVisualStyleBackColor = true;
+            this.button_Reset.Click += new System.EventHandler(this.button_Reset_Click);
+            // 
+            // button_InformationApp
+            // 
+            this.button_InformationApp.BackgroundImage = global::Graph.Properties.Resources.Information1;
+            this.button_InformationApp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_InformationApp.Location = new System.Drawing.Point(212, 21);
+            this.button_InformationApp.Name = "button_InformationApp";
+            this.button_InformationApp.Size = new System.Drawing.Size(43, 41);
+            this.button_InformationApp.TabIndex = 1;
+            this.button_InformationApp.UseVisualStyleBackColor = true;
+            this.button_InformationApp.Click += new System.EventHandler(this.button_InformationApp_Click);
+            // 
+            // button_InformationAuthor
+            // 
+            this.button_InformationAuthor.BackgroundImage = global::Graph.Properties.Resources.Information;
+            this.button_InformationAuthor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_InformationAuthor.Location = new System.Drawing.Point(34, 21);
+            this.button_InformationAuthor.Name = "button_InformationAuthor";
+            this.button_InformationAuthor.Size = new System.Drawing.Size(43, 41);
+            this.button_InformationAuthor.TabIndex = 0;
+            this.button_InformationAuthor.UseVisualStyleBackColor = true;
+            this.button_InformationAuthor.Click += new System.EventHandler(this.button_InformationAuthor_Click);
+            // 
             // button_SaveResultTest
             // 
             this.button_SaveResultTest.BackgroundImage = global::Graph.Properties.Resources.SaveGraph;
@@ -630,18 +668,6 @@ namespace Graph
             this.button_SaveResult.TabIndex = 1;
             this.button_SaveResult.UseVisualStyleBackColor = true;
             this.button_SaveResult.Click += new System.EventHandler(this.button_SaveResult_Click);
-            // 
-            // groupBox_Algorithms
-            // 
-            this.groupBox_Algorithms.Controls.Add(this.Button_AFordBellman);
-            this.groupBox_Algorithms.Controls.Add(this.Button_ADijkstra);
-            this.groupBox_Algorithms.Controls.Add(this.Button_AFloydWarshal);
-            this.groupBox_Algorithms.Location = new System.Drawing.Point(9, 22);
-            this.groupBox_Algorithms.Name = "groupBox_Algorithms";
-            this.groupBox_Algorithms.Size = new System.Drawing.Size(216, 83);
-            this.groupBox_Algorithms.TabIndex = 3;
-            this.groupBox_Algorithms.TabStop = false;
-            this.groupBox_Algorithms.Text = "Алгоритми пошуку";
             // 
             // Button_AFordBellman
             // 
@@ -679,20 +705,6 @@ namespace Graph
             this.Button_AFloydWarshal.UseVisualStyleBackColor = true;
             this.Button_AFloydWarshal.Click += new System.EventHandler(this.Button_AFloydWarshal_Click);
             // 
-            // button_LoadGraph
-            // 
-            this.button_LoadGraph.Location = new System.Drawing.Point(231, 24);
-            this.button_LoadGraph.Name = "button_LoadGraph";
-            this.button_LoadGraph.Size = new System.Drawing.Size(24, 32);
-            this.button_LoadGraph.TabIndex = 11;
-            this.button_LoadGraph.Text = "L";
-            this.button_LoadGraph.UseVisualStyleBackColor = true;
-            this.button_LoadGraph.Click += new System.EventHandler(this.button_LoadGraph_Click);
-            // 
-            // openFile
-            // 
-            this.openFile.FileName = "openFileDialog";
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -712,7 +724,6 @@ namespace Graph
             this.panel_Graph.ResumeLayout(false);
             this.panel_DataGridView.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Graphics)).EndInit();
             this.groupBox_Data.ResumeLayout(false);
             this.groupBox_Data.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -726,6 +737,7 @@ namespace Graph
             this.groupBox1.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox_Algorithms.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Graphics)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -780,6 +792,7 @@ namespace Graph
         private System.Windows.Forms.Button button_Random;
         private System.Windows.Forms.Button button_LoadGraph;
         private System.Windows.Forms.OpenFileDialog openFile;
+        private System.Windows.Forms.Button button_Tests;
     }
 }
 
